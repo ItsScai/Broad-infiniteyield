@@ -1,5 +1,5 @@
 if IY_LOADED and not _G.IY_DEBUG == true then
-	error("Infinite Yield is already running!",0)
+	error("Pog X is already running!",0)
 	return
 end
 
@@ -7,7 +7,7 @@ pcall(function() getgenv().IY_LOADED  = true end)
 
 if not game:IsLoaded() then
 	local notLoaded = Instance.new("Message",workspace)
-	notLoaded.Text = 'Infinite Yield is waiting for the game to load'
+	notLoaded.Text = 'Pog X is waiting for the game to load'
 	game.Loaded:Wait()
 	notLoaded:Destroy()
 end
@@ -212,12 +212,12 @@ Title.Name = "Title"
 Title.Parent = Holder
 Title.Active = true
 Title.BackgroundColor3 = Color3.fromRGB(36,36,37)
-Title.BorderSizePixel = 0
+Title.BorderSizePixel = 4
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Font = Enum.Font.SourceSans
 Title.TextSize = 18
-Title.Text = "Infinite Yield FE v"..ver
-Title.TextColor3 = Color3.new(1, 1, 1)
+Title.Text = "Pog X FE v"..ver
+Title.TextColor3 = Color3.new(255, 255, 0)
 Title.ZIndex = 10
 table.insert(shade1,Title)
 table.insert(text1,Title)
@@ -4581,8 +4581,8 @@ CMDs[#CMDs + 1] = {NAME = 'userid / id [plr]', DESC = 'Notifies a players user I
 CMDs[#CMDs + 1] = {NAME = 'copyuserid / copyid [plr]', DESC = 'Copies a players user ID to your clipboard'}
 CMDs[#CMDs + 1] = {NAME = 'appearanceid / aid [plr]', DESC = 'Notifies a players appearance ID'}
 CMDs[#CMDs + 1] = {NAME = 'copyappearanceid / caid [plr]', DESC = 'Copies a players appearance ID to your clipboard'}
-CMDs[#CMDs + 1] = {NAME = 'bang [plr] [speed]', DESC = 'owo'}
-CMDs[#CMDs + 1] = {NAME = 'unbang', DESC = 'uwu'}
+CMDs[#CMDs + 1] = {NAME = 'pog [plr] [speed]', DESC = 'owo bang'}
+CMDs[#CMDs + 1] = {NAME = 'unpog', DESC = 'un-owo bang'}
 CMDs[#CMDs + 1] = {NAME = 'carpet [plr]', DESC = 'Be someones carpet'}
 CMDs[#CMDs + 1] = {NAME = 'uncarpet', DESC = 'Undoes carpet'}
 CMDs[#CMDs + 1] = {NAME = 'friend [plr]', DESC = 'Sends a friend request to certain players'}
